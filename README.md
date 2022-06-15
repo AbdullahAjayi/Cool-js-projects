@@ -1,3 +1,8 @@
 # Cool-js-projects
 
 This is a list of js projects I am working on at the moment.
+
+## Live site..
+
+### 1. [Blurry Loading](https://blurry-loading-three.l.app)
+### 2. [Vertical Slider](https://vertical-slider-psi.vercel.app/)
