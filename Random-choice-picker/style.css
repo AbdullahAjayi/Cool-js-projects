@@ -7,6 +7,7 @@
 }
 
 body {
+    width: 100vw;
     background: #2b88f0;
     font-family: 'Muli', sans-serif;
     height: 100vh;
@@ -18,13 +19,19 @@ body {
 h3 {
     color: #fff;
     margin: 10px 0 20px;
+    text-align: center;
 }
 
 .container {
+    padding: 10px;
     width: 500px;
 }
 
 textarea {
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
     border: none;
     display: block;
     width: 100%;
@@ -39,6 +46,13 @@ textarea {
     color: #fff;
     border-radius: 50px;
     padding: 10px 20px;
-    margin: 0 5px 10px 10px 0;
+    margin: 0 5px 10px 0;
     font-size: 14px;
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.tag.highlight {
+    background: #273c75;
 }
