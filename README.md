@@ -1,7 +1,8 @@
 # Cool-js-projects
+This is a list of js projects I am working on at the moment.
 ## [Site to view all projects](https://cool-js-projects.vercel.app/)
 
-This is a list of js projects I am working on at the moment.
+
 
 ## Live site for each project:
 
