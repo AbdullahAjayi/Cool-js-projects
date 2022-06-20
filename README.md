@@ -1,8 +1,9 @@
 # Cool-js-projects
+## [Site to view all projects](https://cool-js-projects.vercel.app/)
 
 This is a list of js projects I am working on at the moment.
 
-## Live site for all projects..
+## Live site for each project:
 
 ### 1. [Blurry Loading](https://cool-js-projects.vercel.app/Blurry-loading/)
 ### 2. [Vertical Slider](https://cool-js-projects.vercel.app/Vertical-Slider/)
