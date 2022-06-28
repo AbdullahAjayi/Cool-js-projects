@@ -16,9 +16,11 @@ function getDate() {
     let seconds = date.getSeconds()
     let day_time = 'AM'
 
-    let hourDegree = (hours / 12 * 360) 
-    let minuteDegree = (minutes / 60 * 360)
     let secondDegree = (seconds / 60 * 360)
+    let minuteDegree = (minutes / 60 * 360) + (secondDegree / 60)
+    let hourDegree = (hours / 12 * 360)  + (minuteDegree / 60)
+   
+    
     
     hourHand.style.transform = `rotate(${hourDegree}deg)`
     minuteHand.style.transform = `rotate(${minuteDegree}deg)`
