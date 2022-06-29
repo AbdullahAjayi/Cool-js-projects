@@ -8,6 +8,7 @@
 }
 
 body {
+    max-width: 100vw;
     position: relative;
     height: 100vh;
     display: flex;
@@ -23,6 +24,7 @@ body {
     position: absolute;
     top: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: 50px;
@@ -36,10 +38,15 @@ body {
     cursor: pointer;
 }
 
+.timer button:hover {
+    background: rgba(6, 39, 60, .9);
+}
+
 
 .timer input {
     height: 50px;
     text-align: center;
+    cursor: pointer;
 }
 
 h1 {
