@@ -8,13 +8,37 @@
 }
 
 body {
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(90deg, skyblue, blue);
-    color: #fff;
+    background: #47b5ff;
+    color: #06283D;
+    text-align: center;
+}
+
+.timer {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.timer button {
+    background: #06283D;
+    color: #47b5ff;
+    border: 1px solid #47b5ff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.timer input {
+    height: 50px;
     text-align: center;
 }
 
