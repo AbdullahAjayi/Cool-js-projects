@@ -23,7 +23,7 @@ function timer(seconds) {
 
 function dsplayTimeLeft(seconds) {
     let minutes = Math.floor(seconds / 60);
-    let hours = Math.floor(minutes / 60)
+    let hours = Math.floor(minutes / 60);
     let remainderSeonds = seconds % 60;
     
     hours = (hours < 10) ?  '0' + hours : hours
@@ -36,9 +36,9 @@ function dsplayTimeLeft(seconds) {
 }
 
 function displayEndTime(timestamp) {
-    const end = new Date(timestamp)
-    const hour = end.getHours()
-    const minutes = end.getMinutes()
+    const end = new Date(timestamp);
+    const hour = end.getHours();
+    const minutes = end.getMinutes();
     const dayTime = hour > 12 ? 'PM' : 'AM';
     const formattedHour = hour > 12 ? (hour - 12) : hour;
 
@@ -46,17 +46,19 @@ function displayEndTime(timestamp) {
 }
 
 function startTimer() {
-    const seconds = this.dataset.time
-    timer(seconds)
+    const seconds = parseInt(this.dataset.time);
+    timer(seconds);
 }
 
 buttons.forEach((button)=>{
-    button.addEventListener('click', startTimer)
+    button.addEventListener('click', startTimer);
 })
+
 document.customForm.minutes.addEventListener('submit', function(e) {
-    // e.preventDefault();
-    // const mins = this.minutes.value
-    // timer(mins * 60);
-    // console.log(mins);
+    e.preventDefault();
+    const mins = this.minutes.value
+    timer(mins * 60);
+    console.log(mins);
+    this.reset()
 });
 

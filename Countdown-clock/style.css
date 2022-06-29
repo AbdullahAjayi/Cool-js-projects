@@ -27,7 +27,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 50px;
 }
 
 .timer button {
@@ -36,6 +35,8 @@ body {
     border: 1px solid #47b5ff;
     padding: 10px;
     cursor: pointer;
+    height: 50px;
+    margin-bottom: .6rem;
 }
 
 .timer button:hover {
@@ -51,6 +52,8 @@ body {
 
 h1 {
     font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
