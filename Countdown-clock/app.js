@@ -54,11 +54,14 @@ buttons.forEach((button)=>{
     button.addEventListener('click', startTimer);
 })
 
-document.customForm.minutes.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const mins = this.minutes.value
-    timer(mins * 60);
-    console.log(mins);
-    this.reset()
-});
+document.customForm.addEventListener('submit', (e)=> {
+    e.preventDefault()
+    const mins = this.customForm.minutes.value
+    if (isNaN (mins) == false && mins !== '') {
+        timer(mins * 60);
+    }
+    console.log(typeof mins, isNaN(mins));
+    this.customForm.reset()
+})
+
 
