@@ -64,4 +64,19 @@ document.customForm.addEventListener('submit', (e)=> {
     this.customForm.reset()
 })
 
+// PSEUODOCODE
 
+/* 
+    // STEPS
+    1. Get input from user
+    2. Use input as parameter for the seconds to be worked on and START TIMER
+    3. Display time left to reach the end time
+    4. Calculate and DISPLAY the user ENDTIME (make the time 12 hour format )
+    5. STOP TIMER when the time elapse
+
+    // FUNCTIONS
+    * START TIMER:
+    * DISPLAY TIME LEFT
+    * DISPLAY ENDTIME:
+    * STOP TIMER
+*/

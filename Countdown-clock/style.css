@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-items: center;
 }
 
 body {
@@ -36,7 +37,12 @@ body {
     padding: 10px;
     cursor: pointer;
     height: 50px;
-    margin-bottom: .6rem;
+}
+
+@media (max-width: 480px) {
+    .timer button {
+        margin-bottom: .6rem;
+    }
 }
 
 .timer button:hover {
