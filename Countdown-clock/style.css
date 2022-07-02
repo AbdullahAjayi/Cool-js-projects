@@ -39,12 +39,6 @@ body {
     height: 50px;
 }
 
-@media (max-width: 480px) {
-    .timer button {
-        margin-bottom: .6rem;
-    }
-}
-
 .timer button:hover {
     background: rgba(6, 39, 60, .9);
 }
