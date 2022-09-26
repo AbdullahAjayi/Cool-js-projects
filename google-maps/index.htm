@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google Map</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Map Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        const lagos = { lat: 6.465422, lng: -3.406448 };
+        var options = {
+          zoom: 8,
+          center: lagos,
+        };
+
+        const map = new google.maps.Map(document.getElementById("map"), options);
+
+        map.addListener("click", (e) => {
+          addMarker({ coordinate: latLng });
+        });
+        // const marker = new google.maps.Marker({
+        //   position: { lat: 6.462454, lng: -3.167226 },
+        //   map: map,
+        // });
+
+        // const infoWindow = new google.maps.infoWindow({
+        //   content: "<h1>Ojo, Lagos</h1>",
+        // });
+
+        // marker.addListener("click", function () {
+        //   infoWindow.open(map, marker);
+        // });
+
+        const markers = [
+          { coordinate: { lat: 10.462454, lng: -4.167226 }, iconImage: "https://www.w3s.org" },
+          { coordinate: { lat: 2.462454, lng: -10.167226 }, iconImage: "https://www.w3s.org" },
+          { coordinate: { lat: 5.462454, lng: -3.167226 }, iconImage: "https://www.w3s.org" },
+        ];
+
+        // for (let i = 0; i < markers.length; i++) {
+        //   addMarker(markers[i]);
+        // }
+
+        markers.forEach(function (marker) {
+          addMarker(marker);
+        });
+
+        function addMarker(props) {
+          const marker = new google.map.Marker({
+            position: props.coordinate,
+            map: map,
+            iconImage: props.iconsImage,
+          });
+        }
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
