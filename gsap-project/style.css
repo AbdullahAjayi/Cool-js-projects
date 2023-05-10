@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,9 +20,35 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 ::selection {
   background: blue;
   color: white;
+}
+
+.h1-text {
+  color: black;
+  font-family: "Bungee Outline", cursive;
+}
+
+.md-nav {
+  background-image: url("./images/jonas-kakaroto.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.md-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .nav-el {
@@ -37,15 +64,14 @@ body {
 
 @media screen and (max-width: 776px) {
   .nav-el:hover {
-    transform: translateX(0);
+    transform: translateX(2px);
   }
 }
 
-::-webkit-scrollbar {
-  width: 0;
+.left-div-container {
+  scroll-snap-type: y mandatory;
 }
 
-.h1-text {
-  color: black;
-  font-family: "Bungee Outline", cursive;
+section {
+  scroll-snap-align: start;
 }

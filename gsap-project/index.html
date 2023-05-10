@@ -11,26 +11,102 @@
     <title>GSAP Tutorial</title>
   </head>
   <body>
-    <main
-      class="bg-blue-200 w-screen h-screen flex flex-col md:flex-row-reverse"
-    >
-      <nav class="w-full md:w-1/2 p-4 md:p-8">
-        <ul class="flex md:flex-col items-end flex-wrap gap-8">
-          <li class="nav-el font-bold text-lg md:text-4xl">Home</li>
-          <li class="nav-el font-bold text-lg md:text-4xl">Project</li>
-          <li class="nav-el font-bold text-lg md:text-4xl">Experience</li>
-          <li class="nav-el font-bold text-lg md:text-4xl">Contact</li>
+    <main>
+      <!-- Navbar -->
+      <nav class="hidden h-screen w-1/2 bg-blue-50 p-4 fixed top-0 left-0 z-10">
+        <ul class="flex flex-col flex-wrap gap-4">
+          <li class="nav-el font-bold text-xl sm:text-2xl">Home</li>
+          <li class="nav-el font-bold text-xl sm:text-2xl">Project</li>
+          <li class="nav-el font-bold text-xl sm:text-2xl">Experience</li>
+          <li class="nav-el font-bold text-xl sm:text-2xl">Contact</li>
         </ul>
       </nav>
-      <div class="bg-[blue] h-full w-full md:w-1/2 p-8">
-        <h1 class="h1-text text-4xl font-bold">Creative Developer</h1>
-        <div class="bg-white p-8 mt-8 text-xl">
-          <h2 class="text-2xl mb-4">Hi there 👋!</h2>
-          <p>
-            I am <span>Ibrahim Salako.</span> A frontend developer based in
-            Lagos, Nigeria.
-          </p>
-        </div>
+      <nav
+        class="nav md-nav hidden md:block z-10 fixed right-0 top-0 w-1/2 p-8 h-screen"
+      >
+        <ul class="flex flex-col items-end flex-wrap gap-y-8">
+          <li class="nav-el font-bold md:text-4xl">Home</li>
+          <li class="nav-el font-bold md:text-4xl">Project</li>
+          <li class="nav-el font-bold md:text-4xl">Experience</li>
+          <li class="nav-el font-bold md:text-4xl">Contact</li>
+        </ul>
+      </nav>
+      <!-- Left div -->
+      <div
+        class="left-div-container overflow-y-scroll md:fixed md:w-1/2 h-full top-0"
+      >
+        <!-- Intro section -->
+        <section class="bg-blue-300 h-screen p-4 md:p-8">
+          <!-- Section heading -->
+          <h1 class="h1-text text-4xl font-bold">Creative Developer</h1>
+          <!-- Section card -->
+          <div class="card bg-white p-8 mt-8 text-xl">
+            <h2 class="text-4xl mb-4">Hi there 👋!</h2>
+            <p class="my-2">
+              I am <span class="font-semibold">Ibrahim Salako.</span> A frontend
+              developer based in Lagos, Nigeria.
+            </p>
+            <p class="my-2">
+              Ever since I was teenager, I have developed interest in things
+              that live on the web. Back in the days, you would find me tweaking
+              websites to see how they function
+            </p>
+          </div>
+        </section>
+        <!-- Projects section -->
+        <section class="bg-blue-400 h-screen p-4 md:p-8">
+          <!-- Section heading -->
+          <h1 class="h1-text text-4xl font-bold">Projects</h1>
+          <!-- Section card -->
+          <div class="card bg-white p-8 mt-8 text-xl">
+            <h2 class="text-4xl mb-4">Stuff I have worked on!</h2>
+            <p class="my-2">
+              I am <span class="font-semibold">Ibrahim Salako.</span> A frontend
+              developer based in Lagos, Nigeria.
+            </p>
+            <p class="my-2">
+              Ever since I was teenager, I have developed interest in things
+              that live on the web. Back in the days, you would find me tweaking
+              websites to see how they function
+            </p>
+          </div>
+        </section>
+        <!-- Experience section -->
+        <section class="bg-blue-500 h-screen p-4 md:p-8">
+          <!-- Section heading -->
+          <h1 class="h1-text text-4xl font-bold">Experience</h1>
+          <!-- Section card -->
+          <div class="card bg-white p-8 mt-8 text-xl">
+            <h2 class="text-4xl mb-4">Tools I have worked with.</h2>
+            <p class="my-2">
+              I am <span class="font-semibold">Ibrahim Salako.</span> A frontend
+              developer based in Lagos, Nigeria.
+            </p>
+            <p class="my-2">
+              Ever since I was teenager, I have developed interest in things
+              that live on the web. Back in the days, you would find me tweaking
+              websites to see how they function
+            </p>
+          </div>
+        </section>
+        <!-- Contact section -->
+        <section class="bg-blue-600 h-screen p-4 md:p-8">
+          <!-- Section heading -->
+          <h1 class="h1-text text-4xl font-bold">Contact me</h1>
+          <!-- Section card -->
+          <div class="card bg-white p-8 mt-8 text-xl">
+            <h2 class="text-4xl mb-4">Say Hello!</h2>
+            <p class="my-2">
+              I am <span class="font-semibold">Ibrahim Salako.</span> A frontend
+              developer based in Lagos, Nigeria.
+            </p>
+            <p class="my-2">
+              Ever since I was teenager, I have developed interest in things
+              that live on the web. Back in the days, you would find me tweaking
+              websites to see how they function
+            </p>
+          </div>
+        </section>
       </div>
     </main>
   </body>
