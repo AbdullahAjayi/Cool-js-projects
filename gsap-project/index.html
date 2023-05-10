@@ -11,19 +11,27 @@
     <title>GSAP Tutorial</title>
   </head>
   <body>
-    <div class="blue-bg overflow-hidden overflow-y-scroll">
-      <h1 class="heading font-bold text-4xl">Creative Developer</h1>
-      <div class="text mt-20 text-2xl bg-white p-4 font-semibold">
-        <p class="font-bold mb-4 border-black">Hi there 👋</p>
-        <p class="mt-2">
-          I am IBRAHIM, a frontend developer based in Lagos, Nigeria.
-        </p>
-        <p class="mt-2">
-          Back in my teenage years, I developed the interest for things that
-          live on the web and I decided to pursue that interest. <br />
-        </p>
-        <p class="mt-2 underline">It has been fun since then!</p>
+    <main
+      class="bg-blue-200 w-screen h-screen flex flex-col md:flex-row-reverse"
+    >
+      <nav class="w-full md:w-1/2 p-4 md:p-8">
+        <ul class="flex md:flex-col items-end flex-wrap gap-8">
+          <li class="nav-el font-bold text-lg md:text-4xl">Home</li>
+          <li class="nav-el font-bold text-lg md:text-4xl">Project</li>
+          <li class="nav-el font-bold text-lg md:text-4xl">Experience</li>
+          <li class="nav-el font-bold text-lg md:text-4xl">Contact</li>
+        </ul>
+      </nav>
+      <div class="bg-[blue] h-full w-full md:w-1/2 p-8">
+        <h1 class="h1-text text-4xl font-bold">Creative Developer</h1>
+        <div class="bg-white p-8 mt-8 text-xl">
+          <h2 class="text-2xl mb-4">Hi there 👋!</h2>
+          <p>
+            I am <span>Ibrahim Salako.</span> A frontend developer based in
+            Lagos, Nigeria.
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
