@@ -25,12 +25,12 @@ const pages = [
     subTitle: "Stuff I have worked on!",
     p: [
       `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
-    cupiditate cum voluptas vero?`,
+        Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
+        cupiditate cum voluptas vero?`,
 
       `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
-              cupiditate cum voluptas vero?`,
+        Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
+        cupiditate cum voluptas vero?`,
     ],
     bgColor: "#E14D2A",
   },
@@ -42,12 +42,12 @@ const pages = [
     subTitle: "Stuff I have worked on!",
     p: [
       `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
-    cupiditate cum voluptas vero?`,
+        Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
+        cupiditate cum voluptas vero?`,
 
       `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
-    cupiditate cum voluptas vero?`,
+        Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
+        cupiditate cum voluptas vero?`,
     ],
     bgColor: "#88E0EF",
   },

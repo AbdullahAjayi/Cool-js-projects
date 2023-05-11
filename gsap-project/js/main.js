@@ -40,6 +40,7 @@ const card = document.querySelectorAll(".card");
 const navEl = document.querySelectorAll(".nav-el");
 
 const tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
 tl.from(leftDiv, {
   duration: 0.5,
@@ -49,7 +50,12 @@ tl.from(leftDiv, {
 tl.from(h1Text, {
   opacity: 0,
   x: 100,
-  // scrollTrigger: P
+});
+
+gsap.to(".test", {
+  duration: 2,
+  y: -100,
+  ScrollTrigger: ".test",
 });
 
 tl.from(card, {
