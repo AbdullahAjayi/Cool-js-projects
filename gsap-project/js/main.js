@@ -1,20 +1,9 @@
+import { pages } from "./data.js";
+
 const leftDiv = document.querySelector(".left-div-container");
 const h1Text = document.querySelectorAll(".h1-text");
 const card = document.querySelectorAll(".card");
 const navEl = document.querySelectorAll(".nav-el");
-
-const pages = [
-  {
-    title: "Creative Developer",
-    subTitle: "Hi There 👋",
-    p: ["Some text goes here", "Another set of texts goes here"],
-  },
-  {
-    title: "Creative Developer",
-    subTitle: "Do some cool stuff",
-    p: ["Some text goes here", "Another set of texts goes here"],
-  },
-];
 
 // Generate sections dynamically
 for (const page of pages) {
