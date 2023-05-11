@@ -1,9 +1,6 @@
 import { pages } from "./data.js";
 
 const leftDiv = document.querySelector(".left-div-container");
-const h1Text = document.querySelectorAll(".h1-text");
-const card = document.querySelectorAll(".card");
-const navEl = document.querySelectorAll(".nav-el");
 
 // Generate sections dynamically
 for (const page of pages) {
@@ -13,27 +10,34 @@ for (const page of pages) {
   const card = document.createElement("div");
   const section = document.createElement("section");
 
-  title.textContent = page.title;
-  subTitle.textContent = page.subTitle;
+  title.innerHTML = page.title;
+  subTitle.innerHTML = page.subTitle;
 
   // Add styles for each elements
   title.classList = "h1-text text-4xl font-bold";
   subTitle.classList = "text-4xl mb-4";
   card.classList = "card bg-white p-8 mt-8 text-xl";
-  section.classList = "bg-[#3AB0FF] h-screen p-4 md:p-8";
+  section.classList = `bg-[${page.bgColor}] h-screen p-4 md:p-8`;
+  section.id = page.id;
 
   card.append(subTitle);
   section.append(title, card);
 
   for (const paragraph of page.p) {
     const p = document.createElement("p");
-    p.textContent = paragraph;
+    p.innerHTML = paragraph;
     p.classList = "my-2";
     card.append(p);
   }
 
   leftDiv.append(section);
 }
+
+// GSAP Animations
+
+const h1Text = document.querySelectorAll(".h1-text");
+const card = document.querySelectorAll(".card");
+const navEl = document.querySelectorAll(".nav-el");
 
 const tl = gsap.timeline();
 
@@ -45,6 +49,7 @@ tl.from(leftDiv, {
 tl.from(h1Text, {
   opacity: 0,
   x: 100,
+  // scrollTrigger: P
 });
 
 tl.from(card, {
