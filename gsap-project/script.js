@@ -3,6 +3,49 @@ const h1Text = document.querySelectorAll(".h1-text");
 const card = document.querySelectorAll(".card");
 const navEl = document.querySelectorAll(".nav-el");
 
+const pages = [
+  {
+    title: "Creative Developer",
+    subTitle: "Hi There 👋",
+    p: ["Some text goes here", "Another set of texts goes here"],
+  },
+  {
+    title: "Creative Developer",
+    subTitle: "Do some cool stuff",
+    p: ["Some text goes here", "Another set of texts goes here"],
+  },
+];
+
+// Generate sections dynamically
+for (const page of pages) {
+  // Create the required elements for each section
+  const title = document.createElement("h1");
+  const subTitle = document.createElement("h2");
+  const card = document.createElement("div");
+  const section = document.createElement("section");
+
+  title.textContent = page.title;
+  subTitle.textContent = page.subTitle;
+
+  // Add styles for each elements
+  title.classList = "h1-text text-4xl font-bold";
+  subTitle.classList = "text-4xl mb-4";
+  card.classList = "card bg-white p-8 mt-8 text-xl";
+  section.classList = "bg-[#3AB0FF] h-screen p-4 md:p-8";
+
+  card.append(subTitle);
+  section.append(title, card);
+
+  for (const paragraph of page.p) {
+    const p = document.createElement("p");
+    p.textContent = paragraph;
+    p.classList = "my-2";
+    card.append(p);
+  }
+
+  leftDiv.append(section);
+}
+
 const tl = gsap.timeline();
 
 tl.from(leftDiv, {

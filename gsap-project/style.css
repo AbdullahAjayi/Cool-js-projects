@@ -31,7 +31,7 @@ body {
 
 .h1-text {
   color: black;
-  font-family: "Bungee Outline", cursive;
+  font-family: "Bungee Outline", sans-serif;
 }
 
 .md-nav {
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-el {
-  font-family: "Bungee Outline";
+  font-family: "Bungee Outline", sans-serif;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -62,7 +62,7 @@ body {
   transform: translateX(-2px);
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 768px) {
   .nav-el:hover {
     transform: translateX(2px);
   }
@@ -70,6 +70,17 @@ body {
 
 .left-div-container {
   scroll-snap-type: y mandatory;
+}
+
+@media screen and (min-width: 768px) {
+  .left-div-container::-webkit-scrollbar {
+    width: 6px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .left-div-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+  }
 }
 
 section {

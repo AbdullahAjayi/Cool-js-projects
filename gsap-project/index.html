@@ -11,7 +11,7 @@
     <title>GSAP Tutorial</title>
   </head>
   <body>
-    <main>
+    <main class="">
       <!-- Navbar -->
       <nav class="hidden h-screen w-1/2 bg-blue-50 p-4 fixed top-0 left-0 z-10">
         <ul class="flex flex-col flex-wrap gap-4">
@@ -25,10 +25,18 @@
         class="nav md-nav hidden md:block z-10 fixed right-0 top-0 w-1/2 p-8 h-screen"
       >
         <ul class="flex flex-col items-end flex-wrap gap-y-8">
-          <li class="nav-el font-bold md:text-4xl">Home</li>
-          <li class="nav-el font-bold md:text-4xl">Project</li>
-          <li class="nav-el font-bold md:text-4xl">Experience</li>
-          <li class="nav-el font-bold md:text-4xl">Contact</li>
+          <li class="nav-el font-bold md:text-4xl">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-el font-bold md:text-4xl">
+            <a href="#projects">Project</a>
+          </li>
+          <li class="nav-el font-bold md:text-4xl">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="nav-el font-bold md:text-4xl">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
       <!-- Left div -->
@@ -36,7 +44,7 @@
         class="left-div-container overflow-y-scroll md:fixed md:w-1/2 h-full top-0"
       >
         <!-- Intro section -->
-        <section class="bg-blue-300 h-screen p-4 md:p-8">
+        <section id="home" class="bg-[#3AB0FF] h-screen p-4 md:p-8">
           <!-- Section heading -->
           <h1 class="h1-text text-4xl font-bold">Creative Developer</h1>
           <!-- Section card -->
@@ -51,10 +59,15 @@
               that live on the web. Back in the days, you would find me tweaking
               websites to see how they function
             </p>
+            <p class="my-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Asperiores delectus ipsam, sit unde dolorem pariatur excepturi
+              cupiditate cum voluptas vero?
+            </p>
           </div>
         </section>
         <!-- Projects section -->
-        <section class="bg-blue-400 h-screen p-4 md:p-8">
+        <section id="projects" class="bg-[#E14D2A] h-screen p-4 md:p-8">
           <!-- Section heading -->
           <h1 class="h1-text text-4xl font-bold">Projects</h1>
           <!-- Section card -->
@@ -72,7 +85,7 @@
           </div>
         </section>
         <!-- Experience section -->
-        <section class="bg-blue-500 h-screen p-4 md:p-8">
+        <section id="experience" class="bg-[#88E0EF] h-screen p-4 md:p-8">
           <!-- Section heading -->
           <h1 class="h1-text text-4xl font-bold">Experience</h1>
           <!-- Section card -->
@@ -90,7 +103,7 @@
           </div>
         </section>
         <!-- Contact section -->
-        <section class="bg-blue-600 h-screen p-4 md:p-8">
+        <section id="contact" class="bg-[#D4ADFC] h-screen p-4 md:p-8">
           <!-- Section heading -->
           <h1 class="h1-text text-4xl font-bold">Contact me</h1>
           <!-- Section card -->
