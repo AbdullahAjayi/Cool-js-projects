@@ -24,11 +24,6 @@ for (const page of pages) {
   section.classList = `bg-[${page.bgColor}] lg:h-screen p-4 md:p-8`;
   section.id = page.id;
 
-  gsap.to(title, {
-    scrollTrigger: title,
-    x: 100,
-  });
-
   card.append(subTitle);
   section.append(title, card);
 
