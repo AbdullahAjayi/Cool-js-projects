@@ -1,6 +1,10 @@
 import { pages } from "./data.js";
 
+const container = document.querySelector(".container");
 const leftDiv = document.querySelector(".left-div-container");
+
+const tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
 // Generate sections dynamically
 for (const page of pages) {
@@ -17,8 +21,13 @@ for (const page of pages) {
   title.classList = "h1-text text-4xl font-bold";
   subTitle.classList = "text-4xl mb-4";
   card.classList = "card bg-white p-8 mt-8 text-xl";
-  section.classList = `bg-[${page.bgColor}] h-screen p-4 md:p-8`;
+  section.classList = `bg-[${page.bgColor}] lg:h-screen p-4 md:p-8`;
   section.id = page.id;
+
+  gsap.to(title, {
+    scrollTrigger: title,
+    x: 100,
+  });
 
   card.append(subTitle);
   section.append(title, card);
@@ -30,6 +39,7 @@ for (const page of pages) {
     card.append(p);
   }
 
+  // container.append(section);
   leftDiv.append(section);
 }
 
@@ -39,29 +49,20 @@ const h1Text = document.querySelectorAll(".h1-text");
 const card = document.querySelectorAll(".card");
 const navEl = document.querySelectorAll(".nav-el");
 
-const tl = gsap.timeline();
-gsap.registerPlugin(ScrollTrigger);
+// tl.from(leftDiv, {
+//   duration: 0.5,
+//   y: 100,
+// });
 
-tl.from(leftDiv, {
-  duration: 0.5,
-  y: 100,
-});
+// tl.from(h1Text, {
+//   opacity: 0,
+//   x: 100,
+// });
 
-tl.from(h1Text, {
-  opacity: 0,
-  x: 100,
-});
-
-gsap.to(".test", {
-  duration: 2,
-  y: -100,
-  ScrollTrigger: ".test",
-});
-
-tl.from(card, {
-  duration: 0.5,
-  opacity: 0,
-  y: -50,
-  ease: "elastic",
-  stagger: 0.5,
-});
+// tl.from(card, {
+//   duration: 0.5,
+//   opacity: 0,
+//   y: -50,
+//   ease: "elastic",
+//   stagger: 0.5,
+// });
