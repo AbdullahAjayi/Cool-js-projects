@@ -23,7 +23,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: box2,
     pin: box2,
-    scrub: 1,
+    scrub: 3,
   },
 });
 
