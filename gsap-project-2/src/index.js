@@ -14,7 +14,7 @@ gsap.from(box2, {
     start: "top bottom",
     end: "+=400",
     scrub: true,
-    pin: boxes,
+    pin: ".b-1",
   },
   duration: 3,
 });
@@ -47,7 +47,8 @@ gsap.to(panels, {
   scrollTrigger: {
     trigger: ".panels-container",
     pin: true,
-    scrub: true,
+    scrub: 1,
+    snap: 1 / (panels.length - 1),
     markers: true,
     end: () => "+=" + document.querySelector(".panels-container").offsetWidth,
   },
